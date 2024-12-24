@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
     useEffect(() => {
         const fetchNews = async () => {
             try {
-                const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=2fa1039c7cbe45baa0f93b35233a6252`);
+                const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=47eed3fcf5c341cb930f3a721ddfcd9f`);
                 const result = await response.json();
                 setArticles(result.articles);
             } catch (err) {
